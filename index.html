@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KISKEYA - Barra de Proteína</title>
+<title>KISKEYA - Barra Energética Dominicana</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{
 margin:0;
@@ -14,25 +15,25 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f5f5;
+background:#f4f6f9;
 color:#333;
 }
 
 header{
 background:linear-gradient(135deg,#002D62,#CE1126);
 color:white;
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 header h1{
 font-size:3rem;
-letter-spacing:2px;
+letter-spacing:3px;
 }
 
 header p{
-font-size:1.2rem;
 margin-top:15px;
+font-size:1.2rem;
 }
 
 .btn{
@@ -53,7 +54,7 @@ color:white;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -65,6 +66,24 @@ font-size:2rem;
 color:#002D62;
 }
 
+.slider{
+position:relative;
+max-width:900px;
+margin:40px auto;
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.slider img{
+width:100%;
+display:none;
+}
+
+.slider img.active{
+display:block;
+}
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -73,7 +92,7 @@ gap:30px;
 
 .card{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 text-align:center;
@@ -84,11 +103,18 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
+.highlight{
+background:#002D62;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
 footer{
 background:#002D62;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 margin-top:40px;
 }
 </style>
@@ -98,15 +124,22 @@ margin-top:40px;
 
 <header>
 <h1>KISKEYA</h1>
-<p>Barra de Proteína - Café y Cacao</p>
-<p>Energía auténticamente dominicana en cada mordida 🇩🇴</p>
-<a href="#producto" class="btn">Conoce Más</a>
+<p>Barra Energética Dominicana</p>
+<p>Batata • Coco • Pasas</p>
+<a href="#producto" class="btn">Descubrir Producto</a>
 </header>
 
+<div class="slider">
+<img src="producto1.jpeg" class="active">
+
+</div>
+
 <section id="producto">
-<h2 class="section-title">Nuestro Producto</h2>
-<p style="text-align:center;max-width:700px;margin:auto;">
-Kiskeya es una barra de proteína elaborada con café y cacao, inspirada en los sabores dominicanos. Diseñada para brindar energía sostenida y apoyar un estilo de vida activo.
+<h2 class="section-title">Nuestra Propuesta</h2>
+<p style="text-align:center;max-width:800px;margin:auto;">
+Kiskeya es una barra energética funcional inspirada en sabores tradicionales dominicanos. 
+Combina batata, coco y pasas con proteína vegetal para ofrecer energía sostenida de forma natural.
+Una alternativa saludable a los snacks ultraprocesados.
 </p>
 </section>
 
@@ -114,34 +147,43 @@ Kiskeya es una barra de proteína elaborada con café y cacao, inspirada en los 
 <h2 class="section-title">Beneficios</h2>
 <div class="grid">
 <div class="card">
-<h3>⚡ Energía Prolongada</h3>
-<p>Ideal para estudiantes, deportistas y profesionales activos.</p>
+<h3>⚡ Energía Natural</h3>
+<p>Carbohidratos complejos provenientes de la batata.</p>
+</div>
+<div class="card">
+<h3>🥥 Ingredientes Reales</h3>
+<p>Coco natural, pasas y avena integral.</p>
 </div>
 <div class="card">
 <h3>💪 Fuente de Proteína</h3>
-<p>Apoya el desarrollo y mantenimiento muscular.</p>
-</div>
-<div class="card">
-<h3>🌱 Ingredientes Naturales</h3>
-<p>Sin conservantes artificiales ni colorantes.</p>
+<p>Proteína vegetal que apoya un estilo de vida activo.</p>
 </div>
 <div class="card">
 <h3>🇩🇴 Identidad Dominicana</h3>
-<p>Inspirada en nuestro café y cacao.</p>
+<p>Inspirada en nuestras raíces y sabores tradicionales.</p>
 </div>
 </div>
 </section>
 
 <section>
-<h2 class="section-title">Ingredientes</h2>
+<h2 class="section-title">Ingredientes Principales</h2>
 <div class="grid">
+<div class="card">Batata</div>
+<div class="card">Coco Rallado</div>
+<div class="card">Pasas</div>
 <div class="card">Avena Integral</div>
 <div class="card">Proteína Vegetal</div>
-<div class="card">Café Dominicano</div>
-<div class="card">Cacao Natural</div>
-<div class="card">Miel</div>
-<div class="card">Maní / Almendras</div>
+<div class="card">Miel Natural</div>
 </div>
+</section>
+
+<section class="highlight">
+<h2>Nuestra Identidad</h2>
+<p style="max-width:800px;margin:auto;margin-top:20px;">
+Kiskeya representa la energía de nuestra tierra. 
+Transformamos ingredientes tradicionales dominicanos en un producto innovador, 
+nutritivo y comercialmente viable para el mercado moderno.
+</p>
 </section>
 
 <section>
@@ -149,15 +191,15 @@ Kiskeya es una barra de proteína elaborada con café y cacao, inspirada en los 
 <div class="grid">
 <div class="card">
 <h3>Precio</h3>
-<p>RD$50 por unidad</p>
+<p>RD$60 por unidad</p>
 </div>
 <div class="card">
-<h3>Canales de Venta</h3>
+<h3>Canales</h3>
 <p>Universidades, gimnasios y colmados estratégicos.</p>
 </div>
 <div class="card">
-<h3>Marketing</h3>
-<p>Promoción en redes sociales e influencers fitness.</p>
+<h3>Estrategia Digital</h3>
+<p>Instagram, TikTok y marketing con influencers fitness.</p>
 </div>
 </div>
 </section>
@@ -165,6 +207,20 @@ Kiskeya es una barra de proteína elaborada con café y cacao, inspirada en los 
 <footer>
 <p>© 2026 KISKEYA - Santo Domingo, República Dominicana</p>
 </footer>
+
+<script>
+let index = 0;
+const images = document.querySelectorAll('.slider img');
+
+function changeImage(){
+images.forEach(img => img.classList.remove('active'));
+index++;
+if(index >= images.length){ index = 0; }
+images[index].classList.add('active');
+}
+
+setInterval(changeImage, 3500);
+</script>
 
 </body>
 </html>
