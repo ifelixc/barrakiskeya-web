@@ -11,6 +11,19 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#f4f6f9;color:#333;}
 
+/* ANIMACIONES */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* HEADER */
 header{
 background:linear-gradient(135deg,#002D62,#CE1126);
 color:white;
@@ -26,8 +39,16 @@ background:white;
 color:#CE1126;
 border-radius:30px;
 text-decoration:none;
+transition:0.3s;
 }
 
+.btn:hover{
+transform:scale(1.05);
+background:#002D62;
+color:white;
+}
+
+/* SLIDER */
 .slider{
 max-width:900px;
 margin:40px auto;
@@ -36,8 +57,17 @@ overflow:hidden;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-.slider img{width:100%;}
+.slider img{
+width:100%;
+animation:fadeIn 1.5s ease;
+}
 
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* SECCIONES */
 section{padding:70px 20px;max-width:1100px;margin:auto;}
 .section-title{text-align:center;margin-bottom:40px;color:#002D62;}
 
@@ -53,8 +83,14 @@ padding:25px;
 border-radius:15px;
 box-shadow:0 10px 20px rgba(0,0,0,0.08);
 text-align:center;
+transition:0.3s;
 }
 
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* TABLA */
 .tabla{
 background:white;
 padding:25px;
@@ -94,6 +130,11 @@ text-align:center;
 .producto img{
 width:100%;
 border-radius:15px;
+transition:0.3s;
+}
+
+.producto img:hover{
+transform:scale(1.05);
 }
 
 form{
@@ -116,6 +157,12 @@ padding:12px;
 border:none;
 border-radius:20px;
 cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#002D62;
 }
 
 footer{
@@ -129,55 +176,37 @@ padding:20px;
 
 <body>
 
-<header>
+<header class="fade">
 <h1>KISKEYA NUTRIBAR</h1>
 <p>Barra Proteica Dominicana</p>
 <p>Proteína • Almendras • Batata • Miel • Coco • Pasas</p>
 <a href="#preventa" class="btn">Ordenar ahora</a>
 </header>
 
-<div class="slider">
+<div class="slider fade">
 <img src="producto1.png">
 </div>
 
-<section>
+<section class="fade">
 <h2 class="section-title">Nuestra Propuesta</h2>
 <p style="text-align:center;max-width:800px;margin:auto;">
-Kiskeya Nutribar es una barra proteica funcional elaborada a base de harina de batata, proteína de leche y frutos naturales. 
-Ofrece una combinación ideal entre nutrición, energía sostenida y recuperación muscular.
+Kiskeya Nutribar es una barra proteica funcional elaborada a base de harina de batata, proteína de leche y frutos naturales.
 </p>
 </section>
 
-<!-- BENEFICIOS -->
-<section>
+<section class="fade">
 <h2 class="section-title">Beneficios</h2>
 <div class="grid">
 
-<div class="card">
-<h3>⚡ Energía Sostenida</h3>
-<p>Batata y miel aportan energía gradual.</p>
-</div>
-
-<div class="card">
-<h3>💪 Alto en Proteína</h3>
-<p>20g de proteína de leche por barra.</p>
-</div>
-
-<div class="card">
-<h3>🥜 Grasas Saludables</h3>
-<p>Almendras y coco benefician el cuerpo.</p>
-</div>
-
-<div class="card">
-<h3>🌿 Natural</h3>
-<p>Sin conservantes artificiales.</p>
-</div>
+<div class="card">⚡ Energía Sostenida</div>
+<div class="card">💪 20g de proteína</div>
+<div class="card">🥜 Grasas saludables</div>
+<div class="card">🌿 Natural</div>
 
 </div>
 </section>
 
-<!-- INGREDIENTES (RESTAURADO) -->
-<section>
+<section class="fade">
 <h2 class="section-title">Ingredientes Principales</h2>
 <div class="grid">
 <div class="card">Proteína de leche</div>
@@ -189,9 +218,8 @@ Ofrece una combinación ideal entre nutrición, energía sostenida y recuperaci�
 </div>
 </section>
 
-<!-- NUEVO: TABLA NUTRICIONAL -->
-<section>
-<h2 class="section-title">Información Nutricional (60g)</h2>
+<section class="fade">
+<h2 class="section-title">Información Nutricional</h2>
 <div class="tabla">
 <table>
 <tr><th>Nutriente</th><th>Valor</th></tr>
@@ -199,29 +227,16 @@ Ofrece una combinación ideal entre nutrición, energía sostenida y recuperaci�
 <tr><td>Proteína</td><td>20 g</td></tr>
 <tr><td>Grasas</td><td>9.8 g</td></tr>
 <tr><td>Carbohidratos</td><td>20.4 g</td></tr>
-<tr><td>Fibra</td><td>3.6 g</td></tr>
-<tr><td>Azúcares</td><td>7 g</td></tr>
-<tr><td>Sodio</td><td>54 mg</td></tr>
 </table>
 </div>
 </section>
 
-<!-- NUEVO -->
-<section>
-<h2 class="section-title">Vida Útil</h2>
-<p style="text-align:center;max-width:800px;margin:auto;">
-Vida útil estimada de 7 meses. Conservar en ambiente fresco y seco (18–22°C).
-</p>
-</section>
-
-<!-- NUEVO -->
-<section class="highlight">
+<section class="highlight fade">
 <h2>¿Por qué elegir Kiskeya?</h2>
-<p>Más proteína, ingredientes naturales y mejor perfil nutricional que la competencia.</p>
+<p>Más proteína, ingredientes naturales y mejor perfil nutricional.</p>
 </section>
 
-<!-- PREVENTA -->
-<section class="preventa" id="preventa">
+<section class="preventa fade" id="preventa">
 <h2 class="section-title">Preventa – Haz tu Pedido</h2>
 
 <div class="preventa-container">
@@ -229,25 +244,36 @@ Vida útil estimada de 7 meses. Conservar en ambiente fresco y seco (18–22°C)
 <div class="producto">
 <img src="producto1.png">
 <h3>Kiskeya Nutribar</h3>
-<p>Disponible en preventa</p>
 </div>
 
 <form id="pedidoForm">
 <input type="text" id="nombre" placeholder="Tu nombre" required>
 <input type="tel" id="telefono" placeholder="Teléfono" required>
 <input type="number" id="cantidad" placeholder="Cantidad" required>
-<textarea id="comentario" placeholder="Comentario"></textarea>
 <button type="submit">Enviar pedido</button>
 </form>
 
 </div>
 </section>
 
-<footer>
+<footer class="fade">
 <p>© 2026 Kiskeya Nutribar</p>
 </footer>
 
 <script>
+// ANIMACIÓN SCROLL
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+faders.forEach(el => {
+const top = el.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+el.classList.add('show');
+}
+});
+});
+
+// WhatsApp
 document.getElementById("pedidoForm").addEventListener("submit", function(e){
 e.preventDefault();
 
