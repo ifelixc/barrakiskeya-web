@@ -3,14 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KISKEYA - Barra Energética Dominicana</title>
+<title>KISKEYA NUTRIBAR - Barra Proteica Dominicana</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-body{background:#f4f6f9;color:#333;}
+body{
+background:#f4f6f9;
+color:#333;
+}
 
 header{
 background:linear-gradient(135deg,#002D62,#CE1126);
@@ -19,13 +27,19 @@ padding:70px 20px;
 text-align:center;
 }
 
-header h1{font-size:3rem;letter-spacing:3px;}
+header h1{
+font-size:3rem;
+letter-spacing:3px;
+}
 
-header p{margin-top:15px;font-size:1.2rem;}
+header p{
+margin-top:15px;
+font-size:1.2rem;
+}
 
 .btn{
 display:inline-block;
-margin-top:15px;
+margin-top:25px;
 padding:12px 30px;
 background:white;
 color:#CE1126;
@@ -35,11 +49,23 @@ border-radius:30px;
 transition:0.3s;
 }
 
-.btn:hover{background:#002D62;color:white;}
+.btn:hover{
+background:#002D62;
+color:white;
+}
 
-section{padding:70px 20px;max-width:1100px;margin:auto;}
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
 
-.section-title{text-align:center;margin-bottom:40px;font-size:2rem;color:#002D62;}
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+color:#002D62;
+}
 
 .slider{
 position:relative;
@@ -50,8 +76,14 @@ border-radius:20px;
 box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
-.slider img{width:100%;display:none;}
-.slider img.active{display:block;}
+.slider img{
+width:100%;
+display:none;
+}
+
+.slider img.active{
+display:block;
+}
 
 .grid{
 display:grid;
@@ -68,7 +100,9 @@ text-align:center;
 transition:0.3s;
 }
 
-.card:hover{transform:translateY(-8px);}
+.card:hover{
+transform:translateY(-8px);
+}
 
 .highlight{
 background:#002D62;
@@ -76,27 +110,6 @@ color:white;
 padding:60px 20px;
 text-align:center;
 }
-
-/* TABLA NUTRICIONAL */
-.tabla{
-background:white;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-padding:30px;
-}
-
-.tabla table{
-width:100%;
-border-collapse:collapse;
-}
-
-.tabla th,.tabla td{
-padding:12px;
-border-bottom:1px solid #ddd;
-text-align:left;
-}
-
-.tabla th{color:#CE1126;}
 
 /* PREVENTA */
 .preventa{
@@ -131,7 +144,8 @@ flex-direction:column;
 gap:12px;
 }
 
-.preventa input,.preventa textarea{
+.preventa input,
+.preventa textarea{
 padding:12px;
 border-radius:8px;
 border:1px solid #ccc;
@@ -147,13 +161,8 @@ font-weight:600;
 cursor:pointer;
 }
 
-.preventa button:hover{background:#002D62;}
-
-.mensaje{
-display:none;
-margin-top:15px;
-color:green;
-font-weight:600;
+.preventa button:hover{
+background:#002D62;
 }
 
 footer{
@@ -169,12 +178,10 @@ margin-top:40px;
 <body>
 
 <header>
-<h1>KISKEYA</h1>
-<p>Barra Energética Dominicana</p>
-<p>Batata • Coco • Pasas</p>
-
-<a href="#producto" class="btn">Descubrir Producto</a><br>
-<a href="#preventa" class="btn">Ordenar ahora</a>
+<h1>KISKEYA NUTRIBAR</h1>
+<p>Barra Proteica Dominicana</p>
+<p>Proteína • Almendras • Batata • Miel • Coco • Pasas</p>
+<a href="#producto" class="btn">Descubrir Producto</a>
 </header>
 
 <div class="slider">
@@ -184,7 +191,8 @@ margin-top:40px;
 <section id="producto">
 <h2 class="section-title">Nuestra Propuesta</h2>
 <p style="text-align:center;max-width:800px;margin:auto;">
-Kiskeya es una barra energética funcional inspirada en sabores tradicionales dominicanos.
+Kiskeya Nutribar es una barra proteica funcional inspirada en ingredientes tradicionales dominicanos. 
+Formulada con proteína de leche, almendras y batata, ofrece una combinación ideal para nutrición, rendimiento y saciedad.
 </p>
 </section>
 
@@ -194,22 +202,22 @@ Kiskeya es una barra energética funcional inspirada en sabores tradicionales do
 
 <div class="card">
 <h3>⚡ Energía Sostenida</h3>
-<p>Harina de batata y miel de abejas que aportan energía natural.</p>
+<p>Harina de batata y miel que aportan energía de liberación gradual.</p>
 </div>
 
 <div class="card">
 <h3>💪 Alto en Proteína</h3>
-<p>Proteína de leche que mejora la recuperación muscular.</p>
+<p>Proteína de leche que favorece la recuperación muscular.</p>
 </div>
 
 <div class="card">
 <h3>🥜 Grasas Saludables</h3>
-<p>Almendras y coco con beneficios cardiovasculares.</p>
+<p>Almendras y coco con beneficios nutricionales.</p>
 </div>
 
 <div class="card">
-<h3>🇩🇴 Inspiración Dominicana</h3>
-<p>Producto basado en ingredientes locales.</p>
+<h3>🇩🇴 Identidad Dominicana</h3>
+<p>Inspirada en ingredientes locales adaptados a un producto moderno.</p>
 </div>
 
 </div>
@@ -227,26 +235,10 @@ Kiskeya es una barra energética funcional inspirada en sabores tradicionales do
 </div>
 </section>
 
-<!-- TABLA NUTRICIONAL -->
-<section>
-<h2 class="section-title">Información Nutricional (aprox.)</h2>
-
-<div class="tabla">
-<table>
-<tr><th>Nutriente</th><th>Cantidad</th></tr>
-<tr><td>Calorías</td><td>180 kcal</td></tr>
-<tr><td>Proteína</td><td>10 g</td></tr>
-<tr><td>Carbohidratos</td><td>22 g</td></tr>
-<tr><td>Grasas</td><td>6 g</td></tr>
-<tr><td>Azúcares naturales</td><td>8 g</td></tr>
-</table>
-</div>
-</section>
-
 <section class="highlight">
 <h2>Nuestra Identidad</h2>
 <p style="max-width:800px;margin:auto;margin-top:20px;">
-Kiskeya representa la energía de nuestra tierra.
+Kiskeya representa la innovación dominicana en alimentos funcionales.
 </p>
 </section>
 
@@ -255,19 +247,17 @@ Kiskeya representa la energía de nuestra tierra.
 
 <div class="preventa-container">
 <div class="preventa-producto">
-<img src="producto1.png">
-<h3>Barra Kiskeya</h3>
+<img src="producto1.png" alt="Barra Kiskeya">
+<h3>Kiskeya Nutribar</h3>
 <p>Disponible en preventa</p>
 </div>
 
 <form id="pedidoForm">
 <input type="text" id="nombre" placeholder="Tu nombre" required>
 <input type="tel" id="telefono" placeholder="Teléfono / WhatsApp" required>
-<input type="number" id="cantidad" placeholder="Cantidad" required>
-<textarea id="comentario" placeholder="Comentario"></textarea>
+<input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+<textarea id="comentario" placeholder="Comentario opcional"></textarea>
 <button type="submit">Enviar pedido</button>
-
-<p class="mensaje" id="mensaje">✅ Pedido enviado correctamente</p>
 </form>
 </div>
 </section>
@@ -277,7 +267,6 @@ Kiskeya representa la energía de nuestra tierra.
 </footer>
 
 <script>
-// slider
 let index = 0;
 const images = document.querySelectorAll('.slider img');
 
@@ -289,11 +278,8 @@ images[index].classList.add('active');
 }
 setInterval(changeImage, 3500);
 
-// pedidos
 document.getElementById("pedidoForm").addEventListener("submit", function(e){
 e.preventDefault();
-
-document.getElementById("mensaje").style.display="block";
 
 const nombre = document.getElementById("nombre").value;
 const telefono = document.getElementById("telefono").value;
@@ -303,12 +289,11 @@ const comentario = document.getElementById("comentario").value;
 const mensaje = `Hola, quiero hacer un pedido:%0A
 Nombre: ${nombre}%0A
 Teléfono: ${telefono}%0A
+Producto: Kiskeya Nutribar%0A
 Cantidad: ${cantidad}%0A
 Comentario: ${comentario}`;
 
-setTimeout(()=>{
 window.open(`https://wa.me/18492872193?text=${mensaje}`,"_blank");
-},1000);
 });
 </script>
 
