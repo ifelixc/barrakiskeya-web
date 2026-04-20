@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KISKEYA - Barra Energética Dominicana</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -110,7 +111,7 @@ padding:60px 20px;
 text-align:center;
 }
 
-/* ===== PREVENTA ===== */
+/* PREVENTA */
 .preventa{
 background:white;
 border-radius:20px;
@@ -191,30 +192,46 @@ margin-top:40px;
 <h2 class="section-title">Nuestra Propuesta</h2>
 <p style="text-align:center;max-width:800px;margin:auto;">
 Kiskeya es una barra energética funcional inspirada en sabores tradicionales dominicanos. 
-Combina batata, coco y pasas con proteína vegetal para ofrecer energía sostenida de forma natural.
-Una alternativa saludable a los snacks ultraprocesados.
+Combina batata, coco y pasas con proteína para ofrecer energía sostenida de forma natural.
 </p>
 </section>
 
 <section>
 <h2 class="section-title">Beneficios</h2>
 <div class="grid">
-<div class="card">⚡ Energía Natural</div>
-<div class="card">🥥 Ingredientes Reales</div>
-<div class="card">💪 Fuente de Proteína</div>
-<div class="card">🇩🇴 Identidad Dominicana</div>
+
+<div class="card">
+<h3>⚡ Energía Sostenida</h3>
+<p>Harina de batata y miel de abejas que aportan energía natural de liberación gradual.</p>
+</div>
+
+<div class="card">
+<h3>💪 Alto en Proteína</h3>
+<p>Proteína de leche que contribuye a la recuperación muscular y saciedad.</p>
+</div>
+
+<div class="card">
+<h3>🥜 Grasas Saludables</h3>
+<p>Almendras y coco que aportan energía y beneficios cardiovasculares.</p>
+</div>
+
+<div class="card">
+<h3>🇩🇴 Inspiración Dominicana</h3>
+<p>Ingredientes tradicionales adaptados a un producto moderno y funcional.</p>
+</div>
+
 </div>
 </section>
 
 <section>
 <h2 class="section-title">Ingredientes Principales</h2>
 <div class="grid">
-<div class="card">Batata</div>
-<div class="card">Coco Rallado</div>
+<div class="card">Proteína de leche</div>
+<div class="card">Almendras troceadas</div>
+<div class="card">Harina de batata</div>
+<div class="card">Miel de abejas</div>
+<div class="card">Coco rallado</div>
 <div class="card">Pasas</div>
-<div class="card">Avena Integral</div>
-<div class="card">Proteína Vegetal</div>
-<div class="card">Miel Natural</div>
 </div>
 </section>
 
@@ -225,7 +242,6 @@ Kiskeya representa la energía de nuestra tierra.
 </p>
 </section>
 
-<!-- ===== PREVENTA ===== -->
 <section class="preventa" id="preventa">
 <h2 class="section-title">Preventa – Haz tu Pedido</h2>
 
@@ -262,7 +278,7 @@ images[index].classList.add('active');
 }
 setInterval(changeImage, 3500);
 
-// PEDIDOS WHATSAPP
+// WhatsApp
 document.getElementById("pedidoForm").addEventListener("submit", function(e){
 e.preventDefault();
 
@@ -278,7 +294,7 @@ Producto: Barra Kiskeya%0A
 Cantidad: ${cantidad}%0A
 Comentario: ${comentario}`;
 
-const numero = "1809XXXXXXX"; // CAMBIA ESTO
+const numero = "18492872193";
 window.open(`https://wa.me/${numero}?text=${mensaje}`,"_blank");
 });
 </script>
